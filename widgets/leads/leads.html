@@ -1,0 +1,71 @@
+<div>
+	<div class="wrapper">
+	  <h1>Events</h1>
+	  <div class='container'>
+	    <div class='bar' id='bar_events'></div>
+	  </div>
+	  <button onclick="events()">Change leads value !</button>
+	  <p id="sentence_events" class='sentence'></p>
+	</div>
+	<div class="wrapper">
+	  <h1>EMBA Files</h1>
+	  <div class='container'>
+	    <div class='bar' id='bar_emba'></div>
+	  </div>
+	  <button onclick="emba()">Change leads value !</button>
+	  <p id="sentence_emba"></p>
+	</div>
+	<div class="wrapper">
+	  <h1>EMS Files</h1>
+	  <div class='container'>
+	    <div class='bar' id='bar_ems'></div>
+	  </div>
+	  <button onclick="ems()">Change leads value !</button>
+	  <p id="sentence_ems"></p>
+	</div>
+</div>
+<script>
+	function events() {
+    var eventsValue = prompt("Enter Value :");
+    if (eventsValue != null) {
+        document.getElementById("sentence_events").innerHTML = 
+        "There are" + "<br><b>" + eventsValue + " leads</b>!";
+      
+
+var m = document.getElementById("bar_events"), c = m.style;
+
+c.height = (1.6 * eventsValue)+ 10 + 'px';
+    
+    }
+}
+
+	function emba() {
+    var embaValue = prompt("Enter Value :");
+    if (embaValue != null) {
+        document.getElementById("sentence_emba").innerHTML = 
+        "There are" + "<br><b>" + embaValue + " leads</b>!";
+      
+
+var m = document.getElementById("bar_emba"), c = m.style;
+
+c.height = (1.6 * embaValue)+ 10 + 'px';
+    
+    }
+}
+
+	function ems() {
+    var emsValue = prompt("Enter Value :");
+    if (emsValue != null) {
+        document.getElementById("sentence_ems").innerHTML = 
+        "There are" + "<br><b>" + emsValue + " leads</b>!";
+      
+
+var m = document.getElementById("bar_ems"), c = m.style;
+
+c.height = (3.2 * emsValue)+ 10 + 'px';
+    
+    }
+}
+
+
+</script>
