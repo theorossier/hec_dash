@@ -12,15 +12,12 @@ $background-color:  #FDE3A7;
   color:black;
   font-weight: 900;
 
-}
-
-
-.wrap-clock{
+  .wrap-clock{
 	width:100%;
 	display:block;
 }
 .clock{
-		display:inline-block;
+	display:inline-block;
 	text-align: center;
 	width:33%;
 
@@ -29,3 +26,7 @@ $background-color:  #FDE3A7;
 .flag {
 	display:inline-block
 }
+
+}
+
+

@@ -1,17 +1,15 @@
 .widget-leads {
 	background-color:#2ecc71;
 
-}
-
 
 .wrapper{
-	display:inline-block;
-	text-align: center;
-	width:33%;
-	position: relative
+  display:inline-block;
+  text-align: center;
+  width:33%;
+  position: relative
 }
 .container {
-	margin: 0 auto;
+  margin: 0 auto;
   position: relative;
    width: 20px;
   height:170px;
@@ -46,7 +44,11 @@
 
 
 .sentence{
-	position: absolute;
+  position: absolute;
     top: 40%;
     left: 60px;
 }
+}
+
+
+

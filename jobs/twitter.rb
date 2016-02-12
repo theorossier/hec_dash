@@ -37,7 +37,7 @@ end
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
-    tweets = client.search("HECParisExecEd", :result_type => "recent").each.map do |tweet|
+    tweets = client.search("HECParisExecEd" | "HECExecEd", :result_type => "recent").each.map do |tweet|
       { name: tweet.text, body: tweet.user.screen_name, avatar: tweet.user.profile_image_url_https }
     end
     send_event('twitter_mentions', comments: tweets)
