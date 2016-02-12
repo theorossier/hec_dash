@@ -23,10 +23,9 @@ class Dashing.Clock extends Dashing.Widget
 
   startTimeChina: =>
     todayChina = new Date()
+ 
 
-    todayChina.setUTCHours 6
-
-    hc = todayChina.getHours()
+    hc = todayChina.getHours() + 7
     mc = todayChina.getMinutes()
     sc = todayChina.getSeconds()
     mc = @formatTime(mc)
@@ -39,9 +38,7 @@ class Dashing.Clock extends Dashing.Widget
   startTimeQatar: =>
     todayQatar = new Date()
 
-    todayQatar.setUTCHours 3
-
-    hq = todayQatar.getHours()
+    hq = todayQatar.getHours() + 2
     mq = todayQatar.getMinutes()
     sq = todayQatar.getSeconds()
     mq = @formatTime(mq)
