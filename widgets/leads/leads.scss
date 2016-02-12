@@ -8,6 +8,7 @@
 	display:inline-block;
 	text-align: center;
 	width:33%;
+	position: relative
 }
 .container {
 	margin: 0 auto;
@@ -44,4 +45,8 @@
 }
 
 
-
+.sentence{
+	position: absolute;
+    top: 40%;
+    left: 60px;
+}
