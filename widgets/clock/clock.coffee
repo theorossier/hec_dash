@@ -13,8 +13,7 @@ class Dashing.Clock extends Dashing.Widget
     m = today.getMinutes()
     s = today.getSeconds()
     m = @formatTime(m)
-    s = @formatTime(s)
-    @set('time', h + ":" + m + ":" + s)
+    @set('time', h + ":" + m )
     @set('date', today.toDateString())
 
 
@@ -29,8 +28,7 @@ class Dashing.Clock extends Dashing.Widget
     mc = todayChina.getMinutes()
     sc = todayChina.getSeconds()
     mc = @formatTime(mc)
-    sc = @formatTime(sc)
-    @set('time-china', hc + ":" + mc + ":" + sc)
+    @set('time-china', hc + ":" + mc )
     @set('date-china', todayChina.toDateString())
 
 
@@ -42,8 +40,7 @@ class Dashing.Clock extends Dashing.Widget
     mq = todayQatar.getMinutes()
     sq = todayQatar.getSeconds()
     mq = @formatTime(mq)
-    sq = @formatTime(sq)
-    @set('time-qatar', hq + ":" + mq + ":" + sq)
+    @set('time-qatar', hq + ":" + mq )
     @set('date-qatar', todayQatar.toDateString())
 
 

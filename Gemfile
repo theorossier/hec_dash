@@ -6,3 +6,5 @@ gem 'dashing'
 gem 'twitter', '>= 5.9.0'
 
 gem 'google-api-client', '>= 0.8'
+
+gem 'ruby-trello' 
