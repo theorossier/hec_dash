@@ -29,4 +29,22 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   &.large h3 {
     font-size: 65px;
   }
+
+  h3{
+    padding:40px;
+  }
+
+  textarea{
+  text-align: center;
+  font-size: 25px;
+  background-color:transparent;
+  border:none;
+  color: #FFF;
+  margin: 30px;
+  padding: 10px;
+  border-bottom:solid 1px #e08f76 ;
+  width: 80%;
+  resize: none;
+
+}
 }
